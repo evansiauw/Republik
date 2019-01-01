@@ -686,8 +686,15 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="R6d-4v-K39">
                                 <rect key="frame" x="0.0" y="88" width="375" height="40"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ML4-6L-asP">
+                                    <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LKM-x5-GE2">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2Fc-ei-Hvt"/>
+                                        </constraints>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ML4-6L-asP">
+                                        <rect key="frame" x="0.0" y="40" width="375" height="40"/>
                                         <color key="backgroundColor" red="0.26666666666666666" green="0.25490196078431371" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="ezT-I4-SjD"/>
@@ -863,6 +870,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="searchDisplayController" destination="7qr-kQ-5qa" id="XQ4-32-E92"/>
                         <outlet property="selectCity" destination="ML4-6L-asP" id="0b5-JO-Uyb"/>
                         <outlet property="tableView" destination="u2f-Ch-aRK" id="dC2-Cl-MOr"/>
                         <outletCollection property="cityOptions" destination="yee-Sg-GFs" collectionClass="NSMutableArray" id="pE3-JU-8aD"/>
@@ -873,8 +881,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7SA-kt-lve" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="7qr-kQ-5qa">
+                    <connections>
+                        <outlet property="delegate" destination="D02-FV-ip8" id="iKy-zg-niJ"/>
+                        <outlet property="searchContentsController" destination="D02-FV-ip8" id="drh-6t-SMV"/>
+                        <outlet property="searchResultsDataSource" destination="D02-FV-ip8" id="IGG-ie-Yma"/>
+                        <outlet property="searchResultsDelegate" destination="D02-FV-ip8" id="mrB-Vg-cWG"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="2540" y="-3583.0049261083745"/>
+            <point key="canvasLocation" x="2164" y="-3573"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VMO-Kz-o1l">
