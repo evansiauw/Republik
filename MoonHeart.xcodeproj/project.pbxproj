@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0119488121D1B253006C8403 /* jobCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119488021D1B253006C8403 /* jobCreationViewController.swift */; };
+		0119490621D3E257006C8403 /* PickerViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119490521D3E257006C8403 /* PickerViewViewController.swift */; };
+		0119491921D3E391006C8403 /* UITextView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119490821D3E388006C8403 /* UITextView+Extensions.swift */; };
+		0119491A21D3E391006C8403 /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119490921D3E388006C8403 /* UIAlertController+Extensions.swift */; };
+		0119491B21D3E391006C8403 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119490A21D3E389006C8403 /* Date+Extension.swift */; };
+		0119491C21D3E391006C8403 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119490B21D3E389006C8403 /* UIImageView+Extensions.swift */; };
+		0119491D21D3E391006C8403 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119490C21D3E38A006C8403 /* UITextField+Extensions.swift */; };
+		0119491E21D3E391006C8403 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119490D21D3E38B006C8403 /* Array+Extensions.swift */; };
+		0119491F21D3E391006C8403 /* Locale+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119490E21D3E38B006C8403 /* Locale+Extensions.swift */; };
+		0119492021D3E391006C8403 /* UISegmentedControl+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119490F21D3E38C006C8403 /* UISegmentedControl+Extensions.swift */; };
+		0119492121D3E391006C8403 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119491021D3E38C006C8403 /* UIApplication+Extensions.swift */; };
+		0119492221D3E391006C8403 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119491121D3E38D006C8403 /* String+Extensions.swift */; };
+		0119492321D3E391006C8403 /* Common+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119491221D3E38D006C8403 /* Common+Extensions.swift */; };
+		0119492421D3E391006C8403 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119491321D3E38E006C8403 /* UIImage+Extensions.swift */; };
+		0119492521D3E391006C8403 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119491421D3E38E006C8403 /* UIColor+Extensions.swift */; };
+		0119492621D3E391006C8403 /* UISearchBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119491521D3E38F006C8403 /* UISearchBar+Extensions.swift */; };
+		0119492721D3E391006C8403 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119491621D3E38F006C8403 /* Optional+Extensions.swift */; };
+		0119492821D3E391006C8403 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119491721D3E390006C8403 /* UIView+Extensions.swift */; };
+		0119492921D3E391006C8403 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119491821D3E390006C8403 /* UIViewController+Extensions.swift */; };
+		012258B821974D6C00FE3F23 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012258B721974D6C00FE3F23 /* Message.swift */; };
 		013076DA2190EF7F00176349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013076D92190EF7F00176349 /* AppDelegate.swift */; };
 		013076DC2190EF7F00176349 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013076DB2190EF7F00176349 /* ViewController.swift */; };
 		013076DF2190EF7F00176349 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013076DD2190EF7F00176349 /* Main.storyboard */; };
@@ -14,6 +34,29 @@
 		013076E42190EF8000176349 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013076E22190EF8000176349 /* LaunchScreen.storyboard */; };
 		013076EF2190EF8000176349 /* MoonHeartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013076EE2190EF8000176349 /* MoonHeartTests.swift */; };
 		013076FA2190EF8000176349 /* MoonHeartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013076F92190EF8000176349 /* MoonHeartUITests.swift */; };
+		0130771121910AD100176349 /* AvenirLTStd-Roman.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0130770E21910AD100176349 /* AvenirLTStd-Roman.otf */; };
+		0130771221910AD100176349 /* AvenirLTStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0130770F21910AD100176349 /* AvenirLTStd-Light.otf */; };
+		0130771321910AD100176349 /* AvenirLTStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0130771021910AD100176349 /* AvenirLTStd-Book.otf */; };
+		01307717219135CC00176349 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01307716219135CC00176349 /* loginViewController.swift */; };
+		013077192191D0CA00176349 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013077182191D0CA00176349 /* signUpViewController.swift */; };
+		0130771B2191EB8200176349 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0130771A2191EB8200176349 /* profileViewController.swift */; };
+		013077212192415000176349 /* userDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013077202192415000176349 /* userDataViewController.swift */; };
+		0130774021952C6100176349 /* messageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0130773F21952C6100176349 /* messageViewController.swift */; };
+		0130774221952D7B00176349 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0130774121952D7B00176349 /* Messages.swift */; };
+		0130774621965DE300176349 /* messageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0130774521965DE300176349 /* messageTableViewCell.swift */; };
+		0130774A219698C400176349 /* contactListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01307749219698C400176349 /* contactListTableViewController.swift */; };
+		0130774C21969A6B00176349 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0130774B21969A6B00176349 /* Contact.swift */; };
+		0166F65921CB054B000AEFD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0166F65821CB054B000AEFD9 /* GoogleService-Info.plist */; };
+		0176D45521CC402D00D03AF3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0176D45121CC307D00D03AF3 /* Info.plist */; };
+		0176D45721CC42BB00D03AF3 /* jobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0176D45621CC42BB00D03AF3 /* jobViewController.swift */; };
+		0176D45921CDB77900D03AF3 /* jobFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0176D45821CDB77900D03AF3 /* jobFeed.swift */; };
+		0176D45B21CDB88C00D03AF3 /* jobFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0176D45A21CDB88C00D03AF3 /* jobFeedTableViewCell.swift */; };
+		01B268B421C1AE6F00902131 /* menuCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B268B321C1AE6F00902131 /* menuCollectionViewController.swift */; };
+		01B268B621C1BDC100902131 /* menuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B268B521C1BDC100902131 /* menuCollectionViewCell.swift */; };
+		01B268B821C8999E00902131 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B268B721C8999E00902131 /* mainViewController.swift */; };
+		1DCD6A58A2C8B960E37769AB /* Pods_MoonHeartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3920E43DC91D8F1C57728D /* Pods_MoonHeartTests.framework */; };
+		7B70BDF18EF9AAFDA4532FF2 /* Pods_MoonHeartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B9B119FCA2ACCD4BFB7409 /* Pods_MoonHeartUITests.framework */; };
+		B61CA355FB44BC4BD8B5F213 /* Pods_MoonHeart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6A2F679EFCABE295E31FBE /* Pods_MoonHeart.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +77,65 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0119488021D1B253006C8403 /* jobCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jobCreationViewController.swift; sourceTree = "<group>"; };
+		0119490521D3E257006C8403 /* PickerViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewViewController.swift; sourceTree = "<group>"; };
+		0119490821D3E388006C8403 /* UITextView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Extensions.swift"; sourceTree = "<group>"; };
+		0119490921D3E388006C8403 /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
+		0119490A21D3E389006C8403 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		0119490B21D3E389006C8403 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		0119490C21D3E38A006C8403 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		0119490D21D3E38B006C8403 /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		0119490E21D3E38B006C8403 /* Locale+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Locale+Extensions.swift"; sourceTree = "<group>"; };
+		0119490F21D3E38C006C8403 /* UISegmentedControl+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Extensions.swift"; sourceTree = "<group>"; };
+		0119491021D3E38C006C8403 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		0119491121D3E38D006C8403 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		0119491221D3E38D006C8403 /* Common+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Common+Extensions.swift"; sourceTree = "<group>"; };
+		0119491321D3E38E006C8403 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		0119491421D3E38E006C8403 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		0119491521D3E38F006C8403 /* UISearchBar+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extensions.swift"; sourceTree = "<group>"; };
+		0119491621D3E38F006C8403 /* Optional+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
+		0119491721D3E390006C8403 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		0119491821D3E390006C8403 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		012258B721974D6C00FE3F23 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		013076D62190EF7F00176349 /* MoonHeart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonHeart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		013076D92190EF7F00176349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		013076DB2190EF7F00176349 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		013076DE2190EF7F00176349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		013076E02190EF8000176349 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		013076E32190EF8000176349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		013076E52190EF8000176349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		013076EA2190EF8000176349 /* MoonHeartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoonHeartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		013076EE2190EF8000176349 /* MoonHeartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonHeartTests.swift; sourceTree = "<group>"; };
-		013076F02190EF8000176349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		013076F52190EF8000176349 /* MoonHeartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoonHeartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		013076F92190EF8000176349 /* MoonHeartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonHeartUITests.swift; sourceTree = "<group>"; };
-		013076FB2190EF8000176349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0130770E21910AD100176349 /* AvenirLTStd-Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Roman.otf"; sourceTree = "<group>"; };
+		0130770F21910AD100176349 /* AvenirLTStd-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Light.otf"; sourceTree = "<group>"; };
+		0130771021910AD100176349 /* AvenirLTStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Book.otf"; sourceTree = "<group>"; };
+		01307716219135CC00176349 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		013077182191D0CA00176349 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
+		0130771A2191EB8200176349 /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
+		013077202192415000176349 /* userDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userDataViewController.swift; sourceTree = "<group>"; };
+		0130773F21952C6100176349 /* messageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messageViewController.swift; sourceTree = "<group>"; };
+		0130774121952D7B00176349 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		0130774521965DE300176349 /* messageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messageTableViewCell.swift; sourceTree = "<group>"; };
+		01307749219698C400176349 /* contactListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactListTableViewController.swift; sourceTree = "<group>"; };
+		0130774B21969A6B00176349 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		0166F65821CB054B000AEFD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0176D45121CC307D00D03AF3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0176D45621CC42BB00D03AF3 /* jobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jobViewController.swift; sourceTree = "<group>"; };
+		0176D45821CDB77900D03AF3 /* jobFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jobFeed.swift; sourceTree = "<group>"; };
+		0176D45A21CDB88C00D03AF3 /* jobFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jobFeedTableViewCell.swift; sourceTree = "<group>"; };
+		01B268B321C1AE6F00902131 /* menuCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuCollectionViewController.swift; sourceTree = "<group>"; };
+		01B268B521C1BDC100902131 /* menuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = menuCollectionViewCell.swift; path = MoonHeart/Model/menuCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		01B268B721C8999E00902131 /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
+		1A3920E43DC91D8F1C57728D /* Pods_MoonHeartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoonHeartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D8450C894EE26008C3644E7 /* Pods-MoonHeart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonHeart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoonHeart/Pods-MoonHeart.debug.xcconfig"; sourceTree = "<group>"; };
+		22D912E323115E2C5CB231E1 /* Pods-MoonHeartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonHeartUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoonHeartUITests/Pods-MoonHeartUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7AA57E286F7759E21DB27306 /* Pods-MoonHeartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonHeartTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoonHeartTests/Pods-MoonHeartTests.release.xcconfig"; sourceTree = "<group>"; };
+		9001B8DB6CE078FBAEAA9661 /* Pods-MoonHeartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonHeartUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoonHeartUITests/Pods-MoonHeartUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A7B9B119FCA2ACCD4BFB7409 /* Pods_MoonHeartUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoonHeartUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA6A2F679EFCABE295E31FBE /* Pods_MoonHeart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoonHeart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBCC437CA1ECAF9D23525E9D /* Pods-MoonHeart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonHeart.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoonHeart/Pods-MoonHeart.release.xcconfig"; sourceTree = "<group>"; };
+		FF07E4981C8575F0CE26F635 /* Pods-MoonHeartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonHeartTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoonHeartTests/Pods-MoonHeartTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B61CA355FB44BC4BD8B5F213 /* Pods_MoonHeart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DCD6A58A2C8B960E37769AB /* Pods_MoonHeartTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +159,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B70BDF18EF9AAFDA4532FF2 /* Pods_MoonHeartUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0119490221D3E214006C8403 /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				0119490521D3E257006C8403 /* PickerViewViewController.swift */,
+			);
+			path = Pickers;
+			sourceTree = "<group>";
+		};
+		0119490721D3E342006C8403 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0119490D21D3E38B006C8403 /* Array+Extensions.swift */,
+				0119491221D3E38D006C8403 /* Common+Extensions.swift */,
+				0119490A21D3E389006C8403 /* Date+Extension.swift */,
+				0119490E21D3E38B006C8403 /* Locale+Extensions.swift */,
+				0119491621D3E38F006C8403 /* Optional+Extensions.swift */,
+				0119491121D3E38D006C8403 /* String+Extensions.swift */,
+				0119490921D3E388006C8403 /* UIAlertController+Extensions.swift */,
+				0119491021D3E38C006C8403 /* UIApplication+Extensions.swift */,
+				0119491421D3E38E006C8403 /* UIColor+Extensions.swift */,
+				0119491321D3E38E006C8403 /* UIImage+Extensions.swift */,
+				0119490B21D3E389006C8403 /* UIImageView+Extensions.swift */,
+				0119491521D3E38F006C8403 /* UISearchBar+Extensions.swift */,
+				0119490F21D3E38C006C8403 /* UISegmentedControl+Extensions.swift */,
+				0119490C21D3E38A006C8403 /* UITextField+Extensions.swift */,
+				0119490821D3E388006C8403 /* UITextView+Extensions.swift */,
+				0119491721D3E390006C8403 /* UIView+Extensions.swift */,
+				0119491821D3E390006C8403 /* UIViewController+Extensions.swift */,
+			);
+			name = Extension;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		013076CD2190EF7F00176349 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +206,8 @@
 				013076ED2190EF8000176349 /* MoonHeartTests */,
 				013076F82190EF8000176349 /* MoonHeartUITests */,
 				013076D72190EF7F00176349 /* Products */,
+				54502D400D71E8585751E2C2 /* Pods */,
+				134139F7DD7FC7630C69C40E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +224,14 @@
 		013076D82190EF7F00176349 /* MoonHeart */ = {
 			isa = PBXGroup;
 			children = (
-				013076D92190EF7F00176349 /* AppDelegate.swift */,
-				013076DB2190EF7F00176349 /* ViewController.swift */,
-				013076DD2190EF7F00176349 /* Main.storyboard */,
-				013076E02190EF8000176349 /* Assets.xcassets */,
-				013076E22190EF8000176349 /* LaunchScreen.storyboard */,
-				013076E52190EF8000176349 /* Info.plist */,
+				0119490721D3E342006C8403 /* Extension */,
+				0119490221D3E214006C8403 /* Pickers */,
+				0176D45121CC307D00D03AF3 /* Info.plist */,
+				0166F65821CB054B000AEFD9 /* GoogleService-Info.plist */,
+				013077312195076500176349 /* Model */,
+				013077302195072A00176349 /* View Controllers */,
+				0130772F219506DA00176349 /* Supporting Files */,
+				0130770D21910A9800176349 /* Fonts */,
 			);
 			path = MoonHeart;
 			sourceTree = "<group>";
@@ -111,7 +240,6 @@
 			isa = PBXGroup;
 			children = (
 				013076EE2190EF8000176349 /* MoonHeartTests.swift */,
-				013076F02190EF8000176349 /* Info.plist */,
 			);
 			path = MoonHeartTests;
 			sourceTree = "<group>";
@@ -120,9 +248,84 @@
 			isa = PBXGroup;
 			children = (
 				013076F92190EF8000176349 /* MoonHeartUITests.swift */,
-				013076FB2190EF8000176349 /* Info.plist */,
 			);
 			path = MoonHeartUITests;
+			sourceTree = "<group>";
+		};
+		0130770D21910A9800176349 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0130771021910AD100176349 /* AvenirLTStd-Book.otf */,
+				0130770F21910AD100176349 /* AvenirLTStd-Light.otf */,
+				0130770E21910AD100176349 /* AvenirLTStd-Roman.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0130772F219506DA00176349 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				013076DD2190EF7F00176349 /* Main.storyboard */,
+				0176D45621CC42BB00D03AF3 /* jobViewController.swift */,
+				01B268B721C8999E00902131 /* mainViewController.swift */,
+				013076E22190EF8000176349 /* LaunchScreen.storyboard */,
+				013076D92190EF7F00176349 /* AppDelegate.swift */,
+				013076E02190EF8000176349 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		013077302195072A00176349 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				01B268B321C1AE6F00902131 /* menuCollectionViewController.swift */,
+				013076DB2190EF7F00176349 /* ViewController.swift */,
+				013077202192415000176349 /* userDataViewController.swift */,
+				013077182191D0CA00176349 /* signUpViewController.swift */,
+				0130771A2191EB8200176349 /* profileViewController.swift */,
+				0119488021D1B253006C8403 /* jobCreationViewController.swift */,
+				01307716219135CC00176349 /* loginViewController.swift */,
+				0130773F21952C6100176349 /* messageViewController.swift */,
+				01307749219698C400176349 /* contactListTableViewController.swift */,
+				0176D45A21CDB88C00D03AF3 /* jobFeedTableViewCell.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		013077312195076500176349 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01B268B521C1BDC100902131 /* menuCollectionViewCell.swift */,
+				0130774121952D7B00176349 /* Messages.swift */,
+				0130774521965DE300176349 /* messageTableViewCell.swift */,
+				0130774B21969A6B00176349 /* Contact.swift */,
+				012258B721974D6C00FE3F23 /* Message.swift */,
+				0176D45821CDB77900D03AF3 /* jobFeed.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		134139F7DD7FC7630C69C40E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA6A2F679EFCABE295E31FBE /* Pods_MoonHeart.framework */,
+				1A3920E43DC91D8F1C57728D /* Pods_MoonHeartTests.framework */,
+				A7B9B119FCA2ACCD4BFB7409 /* Pods_MoonHeartUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54502D400D71E8585751E2C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D8450C894EE26008C3644E7 /* Pods-MoonHeart.debug.xcconfig */,
+				FBCC437CA1ECAF9D23525E9D /* Pods-MoonHeart.release.xcconfig */,
+				FF07E4981C8575F0CE26F635 /* Pods-MoonHeartTests.debug.xcconfig */,
+				7AA57E286F7759E21DB27306 /* Pods-MoonHeartTests.release.xcconfig */,
+				9001B8DB6CE078FBAEAA9661 /* Pods-MoonHeartUITests.debug.xcconfig */,
+				22D912E323115E2C5CB231E1 /* Pods-MoonHeartUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,9 +335,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 013076FE2190EF8000176349 /* Build configuration list for PBXNativeTarget "MoonHeart" */;
 			buildPhases = (
+				0AC1F158BD37E67ADB446F1F /* [CP] Check Pods Manifest.lock */,
 				013076D22190EF7F00176349 /* Sources */,
 				013076D32190EF7F00176349 /* Frameworks */,
 				013076D42190EF7F00176349 /* Resources */,
+				52955E5B90020805A0546FE6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +354,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 013077012190EF8000176349 /* Build configuration list for PBXNativeTarget "MoonHeartTests" */;
 			buildPhases = (
+				AE735C9A73404322D05F902F /* [CP] Check Pods Manifest.lock */,
 				013076E62190EF8000176349 /* Sources */,
 				013076E72190EF8000176349 /* Frameworks */,
 				013076E82190EF8000176349 /* Resources */,
@@ -167,6 +373,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 013077042190EF8000176349 /* Build configuration list for PBXNativeTarget "MoonHeartUITests" */;
 			buildPhases = (
+				4C609D703FD034F4006820EF /* [CP] Check Pods Manifest.lock */,
 				013076F12190EF8000176349 /* Sources */,
 				013076F22190EF8000176349 /* Frameworks */,
 				013076F32190EF8000176349 /* Resources */,
@@ -229,9 +436,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0176D45521CC402D00D03AF3 /* Info.plist in Resources */,
 				013076E42190EF8000176349 /* LaunchScreen.storyboard in Resources */,
 				013076E12190EF8000176349 /* Assets.xcassets in Resources */,
+				0130771221910AD100176349 /* AvenirLTStd-Light.otf in Resources */,
+				0130771321910AD100176349 /* AvenirLTStd-Book.otf in Resources */,
+				0130771121910AD100176349 /* AvenirLTStd-Roman.otf in Resources */,
 				013076DF2190EF7F00176349 /* Main.storyboard in Resources */,
+				0166F65921CB054B000AEFD9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +463,147 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AC1F158BD37E67ADB446F1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoonHeart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C609D703FD034F4006820EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoonHeartUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52955E5B90020805A0546FE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MoonHeart/Pods-MoonHeart-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageInputBar/MessageInputBar.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageInputBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoonHeart/Pods-MoonHeart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE735C9A73404322D05F902F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoonHeartTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		013076D22190EF7F00176349 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01B268B421C1AE6F00902131 /* menuCollectionViewController.swift in Sources */,
+				0119491921D3E391006C8403 /* UITextView+Extensions.swift in Sources */,
+				0176D45B21CDB88C00D03AF3 /* jobFeedTableViewCell.swift in Sources */,
+				0119491D21D3E391006C8403 /* UITextField+Extensions.swift in Sources */,
 				013076DC2190EF7F00176349 /* ViewController.swift in Sources */,
+				01B268B821C8999E00902131 /* mainViewController.swift in Sources */,
 				013076DA2190EF7F00176349 /* AppDelegate.swift in Sources */,
+				0119492921D3E391006C8403 /* UIViewController+Extensions.swift in Sources */,
+				0119492621D3E391006C8403 /* UISearchBar+Extensions.swift in Sources */,
+				0119491C21D3E391006C8403 /* UIImageView+Extensions.swift in Sources */,
+				0119491B21D3E391006C8403 /* Date+Extension.swift in Sources */,
+				0119491E21D3E391006C8403 /* Array+Extensions.swift in Sources */,
+				0119492221D3E391006C8403 /* String+Extensions.swift in Sources */,
+				013077212192415000176349 /* userDataViewController.swift in Sources */,
+				0130774C21969A6B00176349 /* Contact.swift in Sources */,
+				01B268B621C1BDC100902131 /* menuCollectionViewCell.swift in Sources */,
+				0119492321D3E391006C8403 /* Common+Extensions.swift in Sources */,
+				0119492721D3E391006C8403 /* Optional+Extensions.swift in Sources */,
+				0119492421D3E391006C8403 /* UIImage+Extensions.swift in Sources */,
+				0119488121D1B253006C8403 /* jobCreationViewController.swift in Sources */,
+				013077192191D0CA00176349 /* signUpViewController.swift in Sources */,
+				0176D45921CDB77900D03AF3 /* jobFeed.swift in Sources */,
+				0119492521D3E391006C8403 /* UIColor+Extensions.swift in Sources */,
+				0119492121D3E391006C8403 /* UIApplication+Extensions.swift in Sources */,
+				0130771B2191EB8200176349 /* profileViewController.swift in Sources */,
+				0130774A219698C400176349 /* contactListTableViewController.swift in Sources */,
+				0119491A21D3E391006C8403 /* UIAlertController+Extensions.swift in Sources */,
+				01307717219135CC00176349 /* loginViewController.swift in Sources */,
+				0119491F21D3E391006C8403 /* Locale+Extensions.swift in Sources */,
+				0130774221952D7B00176349 /* Messages.swift in Sources */,
+				0176D45721CC42BB00D03AF3 /* jobViewController.swift in Sources */,
+				0119492821D3E391006C8403 /* UIView+Extensions.swift in Sources */,
+				012258B821974D6C00FE3F23 /* Message.swift in Sources */,
+				0119492021D3E391006C8403 /* UISegmentedControl+Extensions.swift in Sources */,
+				0119490621D3E257006C8403 /* PickerViewViewController.swift in Sources */,
+				0130774621965DE300176349 /* messageTableViewCell.swift in Sources */,
+				0130774021952C6100176349 /* messageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +709,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				INFOPLIST_FILE = "$(SRCROOT)/MoonHeart/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -418,7 +765,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				INFOPLIST_FILE = "$(SRCROOT)/MoonHeart/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -430,11 +778,13 @@
 		};
 		013076FF2190EF8000176349 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D8450C894EE26008C3644E7 /* Pods-MoonHeart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5J5VKCJHB4;
-				INFOPLIST_FILE = MoonHeart/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MoonHeart/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,11 +798,13 @@
 		};
 		013077002190EF8000176349 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBCC437CA1ECAF9D23525E9D /* Pods-MoonHeart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5J5VKCJHB4;
-				INFOPLIST_FILE = MoonHeart/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MoonHeart/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,6 +818,7 @@
 		};
 		013077022190EF8000176349 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF07E4981C8575F0CE26F635 /* Pods-MoonHeartTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +840,7 @@
 		};
 		013077032190EF8000176349 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AA57E286F7759E21DB27306 /* Pods-MoonHeartTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +862,7 @@
 		};
 		013077052190EF8000176349 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9001B8DB6CE078FBAEAA9661 /* Pods-MoonHeartUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +883,7 @@
 		};
 		013077062190EF8000176349 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22D912E323115E2C5CB231E1 /* Pods-MoonHeartUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

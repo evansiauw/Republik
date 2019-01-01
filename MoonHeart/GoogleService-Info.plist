@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>835367925272-8p06j4tb55lo8p42fc27br5qff13b1iu.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.835367925272-8p06j4tb55lo8p42fc27br5qff13b1iu</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCTzj335_0WeuOq_W5LhH7ZLm-xqKr2sxg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>835367925272</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>evans-company.MoonHeart</string>
+	<key>PROJECT_ID</key>
+	<string>moon-heart</string>
+	<key>STORAGE_BUCKET</key>
+	<string>moon-heart.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:835367925272:ios:9686e3c517024ab6</string>
+	<key>DATABASE_URL</key>
+	<string>https://moon-heart.firebaseio.com</string>
+</dict>
+</plist>
