@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchscreen" translatesAutoresizingMaskIntoConstraints="NO" id="AUG-Vr-kVL">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -27,7 +27,7 @@
                             <constraint firstItem="AUG-Vr-kVL" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Wm3-HT-Xe1"/>
                             <constraint firstItem="AUG-Vr-kVL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YUf-fo-g0j"/>
                             <constraint firstItem="AUG-Vr-kVL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="e7S-wZ-QaP"/>
-                            <constraint firstItem="AUG-Vr-kVL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="yKX-BH-D86"/>
+                            <constraint firstItem="AUG-Vr-kVL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="yKX-BH-D86"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

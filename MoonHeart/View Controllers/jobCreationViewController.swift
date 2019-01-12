@@ -29,6 +29,8 @@ class jobCreationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         db = Firestore.firestore()
+        salary.underlined()
+        jobTitle.underlined()
         
     }
     
@@ -41,9 +43,10 @@ class jobCreationViewController: UIViewController {
                 subtitle:employment,
                 value: salary,
                 desc: desc,
+                location: city,
                 time: Date())
             
-            db.collection(city).addDocument(data: newJobFeed.dictionary){err in
+            db.collection("jobFeeds").addDocument(data: newJobFeed.dictionary){err in
                 if let err = err {
                     self.DisplayAlert(Message: "Oops!!! There's something wrong writing to the database")
                     print("Error writing document: \(err)")
@@ -130,4 +133,16 @@ class jobCreationViewController: UIViewController {
     
  
 
+}
+
+extension UITextField {
+    func underlined(){
+        let border = CALayer()
+        let width = CGFloat(1.0)
+        border.borderColor = UIColor.darkGray.cgColor
+        border.frame = CGRect(x: 0, y: self.frame.size.height - width, width:  self.frame.size.width, height: self.frame.size.height)
+        border.borderWidth = width
+        self.layer.addSublayer(border)
+        self.layer.masksToBounds = true
+    }
 }

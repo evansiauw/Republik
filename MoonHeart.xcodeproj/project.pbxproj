@@ -27,6 +27,8 @@
 		0119492821D3E391006C8403 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119491721D3E390006C8403 /* UIView+Extensions.swift */; };
 		0119492921D3E391006C8403 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119491821D3E390006C8403 /* UIViewController+Extensions.swift */; };
 		012258B821974D6C00FE3F23 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012258B721974D6C00FE3F23 /* Message.swift */; };
+		012AF75F21E6A382004314CB /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012AF75E21E6A382004314CB /* News.swift */; };
+		012AF76321E6A6D0004314CB /* newsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012AF76221E6A6D0004314CB /* newsTableViewCell.swift */; };
 		013076DA2190EF7F00176349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013076D92190EF7F00176349 /* AppDelegate.swift */; };
 		013076DC2190EF7F00176349 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013076DB2190EF7F00176349 /* ViewController.swift */; };
 		013076DF2190EF7F00176349 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013076DD2190EF7F00176349 /* Main.storyboard */; };
@@ -54,6 +56,8 @@
 		01B268B421C1AE6F00902131 /* menuCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B268B321C1AE6F00902131 /* menuCollectionViewController.swift */; };
 		01B268B621C1BDC100902131 /* menuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B268B521C1BDC100902131 /* menuCollectionViewCell.swift */; };
 		01B268B821C8999E00902131 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B268B721C8999E00902131 /* mainViewController.swift */; };
+		01D9406821E96A0F00D300D2 /* Questrial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01D9406721E96A0F00D300D2 /* Questrial-Regular.ttf */; };
+		01F9CA5521DC39F10085B59E /* newsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F9CA5421DC39F00085B59E /* newsViewController.swift */; };
 		1DCD6A58A2C8B960E37769AB /* Pods_MoonHeartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3920E43DC91D8F1C57728D /* Pods_MoonHeartTests.framework */; };
 		7B70BDF18EF9AAFDA4532FF2 /* Pods_MoonHeartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B9B119FCA2ACCD4BFB7409 /* Pods_MoonHeartUITests.framework */; };
 		B61CA355FB44BC4BD8B5F213 /* Pods_MoonHeart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6A2F679EFCABE295E31FBE /* Pods_MoonHeart.framework */; };
@@ -97,6 +101,8 @@
 		0119491721D3E390006C8403 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		0119491821D3E390006C8403 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		012258B721974D6C00FE3F23 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		012AF75E21E6A382004314CB /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = News.swift; path = MoonHeart/Model/News.swift; sourceTree = SOURCE_ROOT; };
+		012AF76221E6A6D0004314CB /* newsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsTableViewCell.swift; sourceTree = "<group>"; };
 		013076D62190EF7F00176349 /* MoonHeart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonHeart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		013076D92190EF7F00176349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		013076DB2190EF7F00176349 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,12 +127,14 @@
 		0130774B21969A6B00176349 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		0166F65821CB054B000AEFD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0176D45121CC307D00D03AF3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0176D45621CC42BB00D03AF3 /* jobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jobViewController.swift; sourceTree = "<group>"; };
+		0176D45621CC42BB00D03AF3 /* jobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = jobViewController.swift; path = "../Supporting Files/jobViewController.swift"; sourceTree = "<group>"; };
 		0176D45821CDB77900D03AF3 /* jobFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jobFeed.swift; sourceTree = "<group>"; };
 		0176D45A21CDB88C00D03AF3 /* jobFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jobFeedTableViewCell.swift; sourceTree = "<group>"; };
 		01B268B321C1AE6F00902131 /* menuCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuCollectionViewController.swift; sourceTree = "<group>"; };
 		01B268B521C1BDC100902131 /* menuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = menuCollectionViewCell.swift; path = MoonHeart/Model/menuCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		01B268B721C8999E00902131 /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
+		01D9406721E96A0F00D300D2 /* Questrial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Questrial-Regular.ttf"; sourceTree = "<group>"; };
+		01F9CA5421DC39F00085B59E /* newsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsViewController.swift; sourceTree = "<group>"; };
 		1A3920E43DC91D8F1C57728D /* Pods_MoonHeartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoonHeartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8450C894EE26008C3644E7 /* Pods-MoonHeart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonHeart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoonHeart/Pods-MoonHeart.debug.xcconfig"; sourceTree = "<group>"; };
 		22D912E323115E2C5CB231E1 /* Pods-MoonHeartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonHeartUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoonHeartUITests/Pods-MoonHeartUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -255,6 +263,7 @@
 		0130770D21910A9800176349 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				01D9406721E96A0F00D300D2 /* Questrial-Regular.ttf */,
 				0130771021910AD100176349 /* AvenirLTStd-Book.otf */,
 				0130770F21910AD100176349 /* AvenirLTStd-Light.otf */,
 				0130770E21910AD100176349 /* AvenirLTStd-Roman.otf */,
@@ -266,8 +275,6 @@
 			isa = PBXGroup;
 			children = (
 				013076DD2190EF7F00176349 /* Main.storyboard */,
-				0176D45621CC42BB00D03AF3 /* jobViewController.swift */,
-				01B268B721C8999E00902131 /* mainViewController.swift */,
 				013076E22190EF8000176349 /* LaunchScreen.storyboard */,
 				013076D92190EF7F00176349 /* AppDelegate.swift */,
 				013076E02190EF8000176349 /* Assets.xcassets */,
@@ -278,6 +285,7 @@
 		013077302195072A00176349 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				01F9CA5421DC39F00085B59E /* newsViewController.swift */,
 				01B268B321C1AE6F00902131 /* menuCollectionViewController.swift */,
 				013076DB2190EF7F00176349 /* ViewController.swift */,
 				013077202192415000176349 /* userDataViewController.swift */,
@@ -287,7 +295,8 @@
 				01307716219135CC00176349 /* loginViewController.swift */,
 				0130773F21952C6100176349 /* messageViewController.swift */,
 				01307749219698C400176349 /* contactListTableViewController.swift */,
-				0176D45A21CDB88C00D03AF3 /* jobFeedTableViewCell.swift */,
+				0176D45621CC42BB00D03AF3 /* jobViewController.swift */,
+				01B268B721C8999E00902131 /* mainViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -295,12 +304,15 @@
 		013077312195076500176349 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				012AF76221E6A6D0004314CB /* newsTableViewCell.swift */,
 				01B268B521C1BDC100902131 /* menuCollectionViewCell.swift */,
 				0130774121952D7B00176349 /* Messages.swift */,
 				0130774521965DE300176349 /* messageTableViewCell.swift */,
 				0130774B21969A6B00176349 /* Contact.swift */,
+				012AF75E21E6A382004314CB /* News.swift */,
 				012258B721974D6C00FE3F23 /* Message.swift */,
 				0176D45821CDB77900D03AF3 /* jobFeed.swift */,
+				0176D45A21CDB88C00D03AF3 /* jobFeedTableViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -340,6 +352,7 @@
 				013076D32190EF7F00176349 /* Frameworks */,
 				013076D42190EF7F00176349 /* Resources */,
 				52955E5B90020805A0546FE6 /* [CP] Embed Pods Frameworks */,
+				343BCFFB52DF423D48D7D595 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -442,6 +455,7 @@
 				0130771221910AD100176349 /* AvenirLTStd-Light.otf in Resources */,
 				0130771321910AD100176349 /* AvenirLTStd-Book.otf in Resources */,
 				0130771121910AD100176349 /* AvenirLTStd-Roman.otf in Resources */,
+				01D9406821E96A0F00D300D2 /* Questrial-Regular.ttf in Resources */,
 				013076DF2190EF7F00176349 /* Main.storyboard in Resources */,
 				0166F65921CB054B000AEFD9 /* GoogleService-Info.plist in Resources */,
 			);
@@ -482,6 +496,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		343BCFFB52DF423D48D7D595 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MoonHeart/Pods-MoonHeart-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/gRPCCertificates-Firestore.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates-Firestore.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoonHeart/Pods-MoonHeart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4C609D703FD034F4006820EF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -507,33 +539,29 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MoonHeart/Pods-MoonHeart-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/MessageInputBar/MessageInputBar.framework",
 				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageInputBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -580,6 +608,7 @@
 				0119491B21D3E391006C8403 /* Date+Extension.swift in Sources */,
 				0119491E21D3E391006C8403 /* Array+Extensions.swift in Sources */,
 				0119492221D3E391006C8403 /* String+Extensions.swift in Sources */,
+				01F9CA5521DC39F10085B59E /* newsViewController.swift in Sources */,
 				013077212192415000176349 /* userDataViewController.swift in Sources */,
 				0130774C21969A6B00176349 /* Contact.swift in Sources */,
 				01B268B621C1BDC100902131 /* menuCollectionViewCell.swift in Sources */,
@@ -590,6 +619,7 @@
 				013077192191D0CA00176349 /* signUpViewController.swift in Sources */,
 				0176D45921CDB77900D03AF3 /* jobFeed.swift in Sources */,
 				0119492521D3E391006C8403 /* UIColor+Extensions.swift in Sources */,
+				012AF75F21E6A382004314CB /* News.swift in Sources */,
 				0119492121D3E391006C8403 /* UIApplication+Extensions.swift in Sources */,
 				0130771B2191EB8200176349 /* profileViewController.swift in Sources */,
 				0130774A219698C400176349 /* contactListTableViewController.swift in Sources */,
@@ -601,6 +631,7 @@
 				0119492821D3E391006C8403 /* UIView+Extensions.swift in Sources */,
 				012258B821974D6C00FE3F23 /* Message.swift in Sources */,
 				0119492021D3E391006C8403 /* UISegmentedControl+Extensions.swift in Sources */,
+				012AF76321E6A6D0004314CB /* newsTableViewCell.swift in Sources */,
 				0119490621D3E257006C8403 /* PickerViewViewController.swift in Sources */,
 				0130774621965DE300176349 /* messageTableViewCell.swift in Sources */,
 				0130774021952C6100176349 /* messageViewController.swift in Sources */,
