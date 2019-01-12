@@ -16,49 +16,22 @@ class jobViewController: UIViewController, UITableViewDataSource, UITableViewDel
     var db: Firestore!
     
     var Selected = false
-    var citySelected = "New York"
+    var citySelected = "jobFeeds"
     var selectedRowIndex = -1
 
     var feeds = [jobFeed]()
+    var filteredFeeds = [jobFeed]()
     
-    @IBOutlet var cityOptions: [UIButton]!
-    @IBOutlet weak var selectCity: UIButton!
+    let searchController = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         db = Firestore.firestore()
-        
         loadData()
         checkForUpdates()
-    
-    }
-   
-    @IBAction func selectCity(_ sender: UIButton) {
-      showOrHideMenu()
+        searchViewProperties()
     }
     
-    @IBAction func selectionPressed(_ sender: UIButton) {
-        
-        if let title = sender.currentTitle {
-            selectCity.setTitle(title, for: .normal)
-            citySelected = title
-            showOrHideMenu()
-        }
-    }
-    
-    func showOrHideMenu(){
-        
-        cityOptions.forEach { (button) in
-            
-            if(Selected == false){
-                button.isHidden = false;
-            } else {
-                button.isHidden = true;
-            }
-        }
-        
-        Selected = !Selected
-    }
     
     func loadData(){
         
@@ -66,6 +39,7 @@ class jobViewController: UIViewController, UITableViewDataSource, UITableViewDel
             if let err = err {
                 print("Error getting documents: \(err)")
             } else {
+               
                 self.feeds = querySnapshot!.documents.compactMap({jobFeed(Dictionary: $0.data())})
                 }
             
@@ -114,6 +88,11 @@ class jobViewController: UIViewController, UITableViewDataSource, UITableViewDel
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        if isFiltering() {
+            return filteredFeeds.count
+        }
+        
         return feeds.count
     }
     
@@ -121,10 +100,16 @@ class jobViewController: UIViewController, UITableViewDataSource, UITableViewDel
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! jobFeedTableViewCell
         
-        let value = feeds[indexPath.row]
+        let value: jobFeed
+        
+        if isFiltering() {
+            value = filteredFeeds[indexPath.row]
+        } else {
+            value = feeds[indexPath.row]
+        }
         
         cell.title.text = value.title
-        cell.subtitle.text = value.subtitle
+        cell.subtitle.text = "\(value.location) - \(value.subtitle)"
         cell.value.text = "$\(value.value)"
         cell.desc.text = value.desc
         
@@ -134,7 +119,7 @@ class jobViewController: UIViewController, UITableViewDataSource, UITableViewDel
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == selectedRowIndex {
-            return 150
+            return 200
         }
         return 79
     }
@@ -154,6 +139,69 @@ class jobViewController: UIViewController, UITableViewDataSource, UITableViewDel
         tableView.reloadRows(at: [indexPath], with: .automatic)
         
     }
+    
+    
+    func searchViewProperties(){
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        navigationItem.searchController = searchController
+        navigationItem.searchController?.searchBar.tintColor = .white
+        UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).defaultTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        definesPresentationContext = true
+        searchController.searchBar.scopeButtonTitles = ["All", "Location", "Job Type"]
+        searchController.searchBar.delegate = self
+    }
+    
+    func searchBarIsEmpty() -> Bool {
+        // Returns true if the text is empty or nil
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+    
+    
+    func filterContentForSearchText(_ searchText: String, scope: String = "All") {
+        
+        filteredFeeds = feeds.filter({( feed : jobFeed) -> Bool in
+            
+            if scope == "Job Type"{
+                return feed.subtitle.lowercased().contains(searchText.lowercased())
+            } else if scope == "Location" {
+                return feed.location.lowercased().contains(searchText.lowercased())
+            } else {
+                return feed.title.lowercased().contains(searchText.lowercased())
+
+            }
+        })
+        
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+        
+    }
+    
+    func isFiltering() -> Bool {
+        let searchBarScopeIsFiltering = searchController.searchBar.selectedScopeButtonIndex != 0
+        return searchController.isActive && (!searchBarIsEmpty() || searchBarScopeIsFiltering)
+    }
+    
+}
+
+extension jobViewController: UISearchResultsUpdating {
+    // MARK: - UISearchResultsUpdating Delegate
+    func updateSearchResults(for searchController: UISearchController) {
+        let searchBar = searchController.searchBar
+        let scope = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
+        filterContentForSearchText(searchController.searchBar.text!, scope: scope)    }
+}
+
+extension jobViewController: UISearchBarDelegate {
+    // MARK: - UISearchBar Delegate
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        filterContentForSearchText(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+}
     
     /*guard let title = sender.currentTitle, let selectedButton = city(rawValue: title) else {
      return
@@ -186,10 +234,29 @@ class jobViewController: UIViewController, UITableViewDataSource, UITableViewDel
      }
      */
    
-    
-    
-    
-    
-
-
-}
+    //    @IBAction func selectCity(_ sender: UIButton) {
+    //      showOrHideMenu()
+    //    }
+    //
+    //    @IBAction func selectionPressed(_ sender: UIButton) {
+    //
+    //        if let title = sender.currentTitle {
+    //            selectCity.setTitle(title, for: .normal)
+    //            citySelected = title
+    //            showOrHideMenu()
+    //        }
+    //    }
+    //
+    //    func showOrHideMenu(){
+    //
+    //        cityOptions.forEach { (button) in
+    //
+    //            if(Selected == false){
+    //                button.isHidden = false;
+    //            } else {
+    //                button.isHidden = true;
+    //            }
+    //        }
+    //
+    //        Selected = !Selected
+    //    }

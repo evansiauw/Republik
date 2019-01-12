@@ -18,6 +18,7 @@ struct jobFeed {
     var subtitle: String
     var value: String
     var desc: String
+    var location: String
     var time: Date
     
     var dictionary:[String:Any]{
@@ -26,6 +27,7 @@ struct jobFeed {
             "subtitle": subtitle,
             "value": value,
             "desc": desc,
+            "location": location,
             "time": time
         ]
     }
@@ -39,10 +41,11 @@ extension jobFeed: DocumentSeriliazable{
             let subtitle = Dictionary["subtitle"] as? String,
             let value = Dictionary["value"] as? String,
             let desc = Dictionary["desc"] as? String,
+            let location = Dictionary["location"] as? String,
             let time = Dictionary["time"] as? Date
             else { return nil}
         
-        self.init(title: title, subtitle: subtitle, value: value, desc: desc, time: time)
+        self.init(title: title, subtitle: subtitle, value: value, desc: desc, location: location, time: time)
 
     }
     

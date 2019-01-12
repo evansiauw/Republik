@@ -26,7 +26,7 @@ class mainViewController: UIViewController {
         
         navigationController?.navigationBar.titleTextAttributes = attrs
         
-        navigationController?.navigationBar.barTintColor = UIColor.black
+        navigationController?.navigationBar.barTintColor = UIColor.red
         setNeedsStatusBarAppearanceUpdate()
         
     }
