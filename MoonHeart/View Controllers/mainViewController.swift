@@ -130,3 +130,4 @@ class mainViewController: UIViewController {
 }
 
 // FIX - if weather reaches triple digits, the number should shrink
+// FIX - ask for user's current location, save it as zipcode
