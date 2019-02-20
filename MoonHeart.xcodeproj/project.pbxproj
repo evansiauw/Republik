@@ -27,7 +27,7 @@
 		0119492821D3E391006C8403 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119491721D3E390006C8403 /* UIView+Extensions.swift */; };
 		0119492921D3E391006C8403 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119491821D3E390006C8403 /* UIViewController+Extensions.swift */; };
 		012258B821974D6C00FE3F23 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012258B721974D6C00FE3F23 /* Message.swift */; };
-		012AF75F21E6A382004314CB /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012AF75E21E6A382004314CB /* News.swift */; };
+		0126CB4921FB7F1F00357B6C /* newsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0126CB4821FB7F1F00357B6C /* newsDetailsViewController.swift */; };
 		012AF76321E6A6D0004314CB /* newsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012AF76221E6A6D0004314CB /* newsTableViewCell.swift */; };
 		013076DA2190EF7F00176349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013076D92190EF7F00176349 /* AppDelegate.swift */; };
 		013076DC2190EF7F00176349 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013076DB2190EF7F00176349 /* ViewController.swift */; };
@@ -49,13 +49,13 @@
 		0130774A219698C400176349 /* contactListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01307749219698C400176349 /* contactListTableViewController.swift */; };
 		0130774C21969A6B00176349 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0130774B21969A6B00176349 /* Contact.swift */; };
 		0166F65921CB054B000AEFD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0166F65821CB054B000AEFD9 /* GoogleService-Info.plist */; };
-		0176D45521CC402D00D03AF3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0176D45121CC307D00D03AF3 /* Info.plist */; };
 		0176D45721CC42BB00D03AF3 /* jobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0176D45621CC42BB00D03AF3 /* jobViewController.swift */; };
 		0176D45921CDB77900D03AF3 /* jobFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0176D45821CDB77900D03AF3 /* jobFeed.swift */; };
 		0176D45B21CDB88C00D03AF3 /* jobFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0176D45A21CDB88C00D03AF3 /* jobFeedTableViewCell.swift */; };
 		01B268B421C1AE6F00902131 /* menuCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B268B321C1AE6F00902131 /* menuCollectionViewController.swift */; };
 		01B268B621C1BDC100902131 /* menuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B268B521C1BDC100902131 /* menuCollectionViewCell.swift */; };
 		01B268B821C8999E00902131 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B268B721C8999E00902131 /* mainViewController.swift */; };
+		01CA3F8D21F69A2900638734 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CA3F8C21F69A2900638734 /* News.swift */; };
 		01D9406821E96A0F00D300D2 /* Questrial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01D9406721E96A0F00D300D2 /* Questrial-Regular.ttf */; };
 		01F9CA5521DC39F10085B59E /* newsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F9CA5421DC39F00085B59E /* newsViewController.swift */; };
 		1DCD6A58A2C8B960E37769AB /* Pods_MoonHeartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3920E43DC91D8F1C57728D /* Pods_MoonHeartTests.framework */; };
@@ -101,7 +101,7 @@
 		0119491721D3E390006C8403 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		0119491821D3E390006C8403 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		012258B721974D6C00FE3F23 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		012AF75E21E6A382004314CB /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = News.swift; path = MoonHeart/Model/News.swift; sourceTree = SOURCE_ROOT; };
+		0126CB4821FB7F1F00357B6C /* newsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsDetailsViewController.swift; sourceTree = "<group>"; };
 		012AF76221E6A6D0004314CB /* newsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsTableViewCell.swift; sourceTree = "<group>"; };
 		013076D62190EF7F00176349 /* MoonHeart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonHeart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		013076D92190EF7F00176349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +133,7 @@
 		01B268B321C1AE6F00902131 /* menuCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuCollectionViewController.swift; sourceTree = "<group>"; };
 		01B268B521C1BDC100902131 /* menuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = menuCollectionViewCell.swift; path = MoonHeart/Model/menuCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		01B268B721C8999E00902131 /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
+		01CA3F8C21F69A2900638734 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		01D9406721E96A0F00D300D2 /* Questrial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Questrial-Regular.ttf"; sourceTree = "<group>"; };
 		01F9CA5421DC39F00085B59E /* newsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsViewController.swift; sourceTree = "<group>"; };
 		1A3920E43DC91D8F1C57728D /* Pods_MoonHeartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoonHeartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -297,6 +298,7 @@
 				01307749219698C400176349 /* contactListTableViewController.swift */,
 				0176D45621CC42BB00D03AF3 /* jobViewController.swift */,
 				01B268B721C8999E00902131 /* mainViewController.swift */,
+				0126CB4821FB7F1F00357B6C /* newsDetailsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -309,10 +311,10 @@
 				0130774121952D7B00176349 /* Messages.swift */,
 				0130774521965DE300176349 /* messageTableViewCell.swift */,
 				0130774B21969A6B00176349 /* Contact.swift */,
-				012AF75E21E6A382004314CB /* News.swift */,
 				012258B721974D6C00FE3F23 /* Message.swift */,
 				0176D45821CDB77900D03AF3 /* jobFeed.swift */,
 				0176D45A21CDB88C00D03AF3 /* jobFeedTableViewCell.swift */,
+				01CA3F8C21F69A2900638734 /* News.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -351,8 +353,8 @@
 				013076D22190EF7F00176349 /* Sources */,
 				013076D32190EF7F00176349 /* Frameworks */,
 				013076D42190EF7F00176349 /* Resources */,
-				52955E5B90020805A0546FE6 /* [CP] Embed Pods Frameworks */,
-				343BCFFB52DF423D48D7D595 /* [CP] Copy Pods Resources */,
+				C16651804E8B6C7A6C898DA7 /* [CP] Embed Pods Frameworks */,
+				0CF88ADDBF57FF8FB0144795 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -449,7 +451,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0176D45521CC402D00D03AF3 /* Info.plist in Resources */,
 				013076E42190EF8000176349 /* LaunchScreen.storyboard in Resources */,
 				013076E12190EF8000176349 /* Assets.xcassets in Resources */,
 				0130771221910AD100176349 /* AvenirLTStd-Light.otf in Resources */,
@@ -496,7 +497,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		343BCFFB52DF423D48D7D595 /* [CP] Copy Pods Resources */ = {
+		0CF88ADDBF57FF8FB0144795 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -532,7 +533,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		52955E5B90020805A0546FE6 /* [CP] Embed Pods Frameworks */ = {
+		AE735C9A73404322D05F902F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoonHeartTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C16651804E8B6C7A6C898DA7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -570,24 +589,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoonHeart/Pods-MoonHeart-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AE735C9A73404322D05F902F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MoonHeartTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -597,6 +598,7 @@
 			files = (
 				01B268B421C1AE6F00902131 /* menuCollectionViewController.swift in Sources */,
 				0119491921D3E391006C8403 /* UITextView+Extensions.swift in Sources */,
+				0126CB4921FB7F1F00357B6C /* newsDetailsViewController.swift in Sources */,
 				0176D45B21CDB88C00D03AF3 /* jobFeedTableViewCell.swift in Sources */,
 				0119491D21D3E391006C8403 /* UITextField+Extensions.swift in Sources */,
 				013076DC2190EF7F00176349 /* ViewController.swift in Sources */,
@@ -613,13 +615,13 @@
 				0130774C21969A6B00176349 /* Contact.swift in Sources */,
 				01B268B621C1BDC100902131 /* menuCollectionViewCell.swift in Sources */,
 				0119492321D3E391006C8403 /* Common+Extensions.swift in Sources */,
+				01CA3F8D21F69A2900638734 /* News.swift in Sources */,
 				0119492721D3E391006C8403 /* Optional+Extensions.swift in Sources */,
 				0119492421D3E391006C8403 /* UIImage+Extensions.swift in Sources */,
 				0119488121D1B253006C8403 /* jobCreationViewController.swift in Sources */,
 				013077192191D0CA00176349 /* signUpViewController.swift in Sources */,
 				0176D45921CDB77900D03AF3 /* jobFeed.swift in Sources */,
 				0119492521D3E391006C8403 /* UIColor+Extensions.swift in Sources */,
-				012AF75F21E6A382004314CB /* News.swift in Sources */,
 				0119492121D3E391006C8403 /* UIApplication+Extensions.swift in Sources */,
 				0130771B2191EB8200176349 /* profileViewController.swift in Sources */,
 				0130774A219698C400176349 /* contactListTableViewController.swift in Sources */,

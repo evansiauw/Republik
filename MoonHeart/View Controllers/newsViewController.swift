@@ -8,9 +8,11 @@
 
 import UIKit
 import Alamofire
+//import AlamoFireImage
 
 class newsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
+    @IBOutlet weak var tableView: UITableView!
     var news = [News]()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -24,24 +26,38 @@ class newsViewController: UIViewController, UITableViewDelegate, UITableViewData
         let value = news[indexPath.row]
         let imageRef = value.urlToImage
         
-        //cell.images.image =
+        loadImage(imageRef) { (image) -> Void in
+            if let image = image{
+                                
+                DispatchQueue.main.async {
+                    cell.images.image = image
+                }
+                self.news[indexPath.row].newsImage = image
+            }
+        }
+        
         cell.date.text = value.publishedAt
         cell.title.text = value.title
-        
+        cell.sourceName.text = value.details.name
         
         return cell
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        getNewsApi()
+    
+    }
+    
+    func getNewsApi(){
         
-        let newsUrl: String = "https://newsapi.org/v2/top-headlines?country=id&apiKey=bb8f275491f44ee38e3cfef33a5ca4fb"
+        let newsUrl = "https://newsapi.org/v2/top-headlines?country=id&apiKey=bb8f275491f44ee38e3cfef33a5ca4fb"
         
-        AF.request(newsUrl)
+        guard let url = URL(string: newsUrl) else { return }
+        
+        AF.request(url)
             .responseJSON { response in
-                // check for errors
                 guard response.result.error == nil else {
                     // got an error in getting the data, need to handle it
                     print("error calling GET on /todos/1")
@@ -49,53 +65,65 @@ class newsViewController: UIViewController, UITableViewDelegate, UITableViewData
                     return
                 }
                 
-                print(response.value!)
-      
+                guard let json = response.value as? [String: Any] else {
+                    print("didn't get todo object as JSON from API")
+                    print("Error: \(response.result.error!)")
+                    return
+                }
                 
-//                // make sure we got some JSON since that's what we expect
-//                guard let json = response.value as? [String: Any] else {
-//                    print("didn't get todo object as JSON from API")
-//                    print("Error: \(response.result.error!)")
-//                    return
-//                }
-//
-//                // get and print the title
-//                guard let articles = json["articles"] as? [Any] else {
-//                    print("Could not get todo title from JSON")
-//                    return
-//                }
-//
-//                print(articles)
-
-//                self.news = articles.compactMap({News(Dictionary: $0 as! [String : Any])})
-//
-//                print("number of arrays in news are: \(self.news.count)")
-
+                guard let articles = json["articles"] as? [Any] else {
+                    print("Could not get todo title from JSON")
+                    return
+                }
+                
+                for jsonArray in articles {
+                    
+                    print(jsonArray)
+                    self.news.append(News(dictionary: jsonArray as! [String : Any]))
+                }
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
         }
-
+        
     }
     
-   /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    func loadImage(_ urlString: String, handler:@escaping (_ image:UIImage?)-> Void)
+    {
+        guard let imageURL = URL(string: urlString) else { return }
         
-        if segue.identifier == "segueFeedDetails"{
+        URLSession.shared.dataTask(with: imageURL) { (data, _, _) in
+            if let data = data{
+                handler(UIImage(data: data))
+            }
+            }.resume()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "newsDetails"{
             
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 
-                let value = feeds[indexPath.row]
+                let value = news[indexPath.row]
                 
-                let destination = segue.destination as! feedCellDetailsViewController
+                let destination = segue.destination as! newsDetailsViewController
                 
-                destination.image = value.realImage
-                destination.feedTitleDetails = value.title
-                destination.feedDetail = value.details
+                destination.titles = value.description
+                destination.details = value.content
+                
+                if let image = value.newsImage {
+                    destination.image = image
+                }
                 
             }
-            
         }
-        
-    } */
-    
-
-  
-
+    }
 }
+
+
+
+
+
+
