@@ -1,6 +1,6 @@
 # Republik
 
-A better and newer version of Indo-Us app, dedicated to Indonesians who live in the states.
+A better and newer version of Indo-Us app dedicated to Indonesians who live in the states.
 
 ## Screenshot
 <img src="https://github.com/evansiauw/Republik/blob/master/Republik.gif" width="200" height="400">
